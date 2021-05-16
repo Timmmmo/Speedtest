@@ -34,7 +34,6 @@ function speed( bitsProSekunde ){
 
 function go(){
 
-    for(let i = 0; i <= 10; i++){
     var download = new Image();
     download.onload = function () {
         EndZeit = (new Date()).getTime();
@@ -45,6 +44,5 @@ function go(){
     console.log("startzeit: "+ StartZeit);
     var cacheBuster = "?nnn=" + StartZeit;
     download.src = Bild + cacheBuster;
-
-    }
+    
 }
